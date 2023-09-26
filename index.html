@@ -21,17 +21,21 @@
         <div>
             <label for="city-input">Search for a City:</label>
             <input type="text" id="city-input" placeholder="Enter city name">
-            <button class="searh" onclick="getWeatherData()">Search</button>
+            <button class="search" id="search-button">Search</button>
+            <div id="recent-searches">
+                
+            </div>
+
         </div>
-    </div>
-
-    <div class="container">
-        <div id="weather-data">
-
+        <div>
+            <div id="weather-data"></div>
+            <div id="forecast-container"></div>
         </div>
     </div>
 
     <script src="./assets/script.js"></script>
 </body>
+
+
 
 </html>

@@ -5,6 +5,7 @@
 }
 
 .container {
+    display: flex;
     max-width: 1620px;
     margin: 0 auto;
 }
@@ -20,13 +21,14 @@ input {
     width: 283px;
     border: 1px solid black;
     border-radius: 10px;
+    padding-left: 5px;
 }
 
-.searh {
+#search-button {
     color: white;
     margin-top: 7px;
     height: 30px;
-    width: 285px;
+    width: 290px;
     background-color: #9D7AFF;
     border-radius: 10px;
     border: none;
@@ -40,13 +42,43 @@ input {
 }
 
 #weather-data {
-    /* margin: 20px; */
+    border: 1px solid black;
+    margin-left: 10px;   
     border-radius: 10px;
     margin-top: 7px;
-    width: 285px;
+    width: 1320px;
+    height: 199px;
     background-color: #d2c9eb;
+}
+
+.recent-buttons {
+    width: 290px;
+}
+
+#recent-searches {
+    margin-top: 7px;
+    border-top: #d2c9eb 2px solid;
 }
 
 #weather-data > * {
     margin: 5px;
+}
+
+#forecast-container {
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+.forecast-item {
+    color: white;
+    background-color: #604d96;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+}  
+
+.forecast-title {
+    margin-top: 75px;
 }
